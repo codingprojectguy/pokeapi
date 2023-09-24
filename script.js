@@ -34,7 +34,16 @@ function getPokemon(e) {
     </div>
     <div class="pokemonInfo">
       <h1>${capitalizeFirstLetter(data.name)}</h1>
-      <p>Weight: ${data.weight}</p>
+      <br>
+      <h3>${capitalizeFirstLetter(data.abilities[0].ability.name)}</h3>
+      <h3>${capitalizeFirstLetter(data.abilities[1].ability.name)}</h3>
+      <p>🔋Hp: ${data.stats[0].base_stat}</p>
+      <p>🎯Attack: ${data.stats[1].base_stat}</p>
+      <p>🔰Defense: ${data.stats[2].base_stat}</p>
+      <p>⚡Speed: ${data.stats[5].base_stat}</p>
+      <p>🐉Weight: ${data.weight}</p>
+      <br>
+      <br>
     </div>
       `
     })
