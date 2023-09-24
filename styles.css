@@ -63,7 +63,19 @@
   .pokemonBox img {
     width: 200px;
   }
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pokemonChar img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+
   .pokemonBox p {
     margin-top: 1rem;
   }
