@@ -1,6 +1,11 @@
 //Event Listener: When an element with the id "search" is clicked, it triggers the getPokemon function.
 document.querySelector("#search").addEventListener("click", getPokemon);
-
+document.querySelector("#pokemonName").addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    getPokemon();
+  }
+});
 
 //lowerCaseName: This function takes a string and converts it to lowercase.
 function lowerCaseName(string) {
